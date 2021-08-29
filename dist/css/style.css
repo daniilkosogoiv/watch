@@ -164,6 +164,7 @@
 
 .card {
   max-width: 260px;
+  text-decoration: none;
 }
 
 .card__image {
@@ -366,6 +367,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .catalog {
@@ -609,6 +613,26 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 0;
+}
+
+input[type=email]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input[type=email]::-moz-placeholder {
+  color: #fff;
+}
+
+input[type=email]:-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type=email]::-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type=email]::placeholder {
+  color: #fff;
 }
 
 .webp .main { background-image: url(../img/bg.webp); }
